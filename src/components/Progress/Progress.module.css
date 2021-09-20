@@ -1,0 +1,127 @@
+.container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: -100%;
+  transition: right 0.2s 0.1s, background-color 0.1s;
+}
+
+.menuBlock {
+  height: 100%;
+  overflow: auto;
+  margin-left: auto;
+}
+
+.buttonsContainer {
+  box-sizing: border-box;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  padding: 24px 0;
+  width: 100%;
+  background: #ffffff;
+}
+
+.buttonWrapper {
+  height: 32px;
+  margin-bottom: 8px;
+}
+
+.rewardButtonContent {
+  width: 100%;
+  text-align: center;
+}
+
+.reachedLevel {
+  color: var(--gray-20);
+}
+
+.currentLevel {
+  color: var(--orange-30);
+}
+
+.active {
+  right: 0;
+  background: rgba(0, 0, 0, 0.2);
+  transition: right 0.2s, background-color 0.5s 0.2s;
+}
+
+@media (min-width: 576px) {
+
+  .buttonWrapper {
+    height: 36px;
+  }
+
+  .menuBlock {
+    width: 100%;
+    max-width: 376px;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .buttonWrapper {
+    height: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .buttonWrapper {
+    width: 376px;
+  }
+  
+  .container {
+    position: relative;
+    width: auto;
+    right: 0;
+  }
+}
+
+@media (min-width: 1800px) {
+
+  .menuBlock {
+    width: 500px;
+    max-width: 100%;
+  }
+
+  .buttonWrapper {
+    width: 100%;
+    height: 48px;
+  }
+}
+
+@media (min-width: 2500px) {
+
+  .menuBlock {
+    width: 500px;
+  }
+
+  .buttonWrapper {
+    height: 60px;
+  }
+}
+
+@media (min-width: 3000px) {
+
+  .menuBlock {
+    width: 700px;
+  }
+
+  .buttonWrapper {
+    height: 75px;
+  }
+}
+
+@media (min-width: 3500px) {
+
+  .menuBlock {
+    width: 900px;
+  }
+
+  .buttonWrapper {
+    height: 85px;
+  }
+}

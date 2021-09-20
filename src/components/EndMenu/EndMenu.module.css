@@ -1,0 +1,116 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0 16px;
+}
+
+.mainImg {
+  max-width: 100%;
+  margin-bottom: 24px;
+}
+
+.textBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.title {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 37px;
+  color: var(--gray-30);
+  margin-bottom: 102px;
+  text-align: center;
+}
+
+.inscription {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 116%;
+  text-align: center;
+  color: var(--gray-30);
+  opacity: 0.5;
+}
+
+@media (min-width: 576px) {
+
+  .title {
+    font-size: 45px;
+    line-height: 50px;
+  }
+
+  .inscription {
+    font-size: 26px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .container {
+    flex-direction: row;
+  }
+
+  .title {
+    text-align: start;
+    font-size: 56px;
+    line-height: 65px;
+  }
+
+  .textBlock {
+    max-width: 50%;
+    align-items: flex-start;
+  }
+
+  .mainImg {
+    margin-bottom: 0;
+    margin-right: 120px;
+  }
+
+  .inscription {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 2000px) {
+
+  .mainImg {
+    width: 50%;
+    max-width: 650px;
+  }
+
+  .inscription {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 2500px) {
+
+  .title {
+    font-size: 76px;
+    line-height: 85px;
+  }
+}
+
+@media (min-width: 3000px) {
+
+  .title {
+    font-size: 96px;
+    line-height: 100px;
+  }
+
+  .inscription {
+    font-size: 45px;
+  }
+
+  .mainImg {
+    width: 50%;
+    max-width: 1000px;
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "cards": [
+    {
+      "question": "Яка єдина країна грала на кожному окремому чемпіонаті світу з футболу?",
+      "answers": [
+        { "letter": "a", "text": "Бразилія", "correct": true },
+        { "letter": "b", "text": "Англія", "correct": false },
+        { "letter": "c", "text": "Іспанія", "correct": false },
+        { "letter": "d", "text": "Португалія", "correct": false },
+        { "letter": "e", "text": "Естонія", "correct": false }
+      ]
+    },
+    {
+      "question": "До якого фільму належать персонажі Сімба, Шрам та Муфаса?",
+      "answers": [
+        { "letter": "a", "text": "Мауглі", "correct": false },
+        { "letter": "b", "text": "Король Лев", "correct": true },
+        { "letter": "c", "text": "Скубі-Ду", "correct": false },
+        { "letter": "d", "text": "Русалонька", "correct": false }
+      ]
+    },
+    {
+      "question": "Хто є творцем Сімпсонів?",
+      "answers": [
+        { "letter": "a", "text": "Сильвестр Сталоне", "correct": false },
+        { "letter": "b", "text": "Сет Макфарлейн", "correct": false },
+        { "letter": "c", "text": "Метт Грінінг", "correct": true },
+        { "letter": "d", "text": "Крістен Стюарт", "correct": false }
+      ]
+    },
+    {
+      "question": "Який відомий актор став губернатором Каліфорнії в 2003 році?",
+      "answers": [
+        { "letter": "a", "text": "Томі Вайсо", "correct": false },
+        { "letter": "b", "text": "Аль Пачіно", "correct": false },
+        { "letter": "c", "text": "Джордж Клуні", "correct": false },
+        { "letter": "d", "text": "Арнольд Шварценеггер", "correct": true }
+      ]
+    },
+    {
+      "question": "На яке місто було скинуто другу атомну бомбу, коли-небудь використовувану в роки війни?",
+      "answers": [
+        { "letter": "a", "text": "Нагасакі", "correct": true },
+        { "letter": "b", "text": "Сідней", "correct": false },
+        { "letter": "c", "text": "Мексика", "correct": false },
+        { "letter": "d", "text": "Зімбабве", "correct": false }
+      ]
+    },
+    {
+      "question": "Хто був першим президентом США?",
+      "answers": [
+        { "letter": "a", "text": "Рональд Рейган", "correct": false },
+        { "letter": "b", "text": "Джордж Вашингтон", "correct": true },
+        { "letter": "c", "text": "Рональд Макдональд", "correct": false },
+        { "letter": "d", "text": "Дональд Трамп", "correct": false }
+      ]
+    },
+    {
+      "question": "Яка країна винайшла чай?",
+      "answers": [
+        { "letter": "a", "text": "Монголія", "correct": false },
+        { "letter": "b", "text": "Індія", "correct": false },
+        { "letter": "c", "text": "Китай", "correct": true },
+        { "letter": "d", "text": "Японія", "correct": false }
+      ]
+    },
+    {
+      "question": "Хто був грецьким богом війни?",
+      "answers": [
+        { "letter": "a", "text": "Гермес", "correct": false },
+        { "letter": "b", "text": "Зевс", "correct": false },
+        { "letter": "c", "text": "Аід", "correct": false },
+        { "letter": "d", "text": "Арес", "correct": true }
+      ]
+    },
+    {
+      "question": "Яка найдовша річка на Землі?",
+      "answers": [
+        { "letter": "a", "text": "Ніл", "correct": true },
+        { "letter": "b", "text": "Дніпро", "correct": false },
+        { "letter": "c", "text": "Амазонка", "correct": false },
+        { "letter": "d", "text": "Іордан", "correct": false }
+      ]
+    },
+    {
+      "question": "Який за чисельністю населення є найбільшим штатом США?",
+      "answers": [
+        { "letter": "a", "text": "Невада", "correct": false },
+        { "letter": "b", "text": "Каліфорнія", "correct": true },
+        { "letter": "c", "text": "Конектикуд", "correct": false },
+        { "letter": "d", "text": "Клівленд", "correct": false }
+      ]
+    },
+    {
+      "question": "Хто такий заклятий ворог Бетмена?",
+      "answers": [
+        { "letter": "a", "text": "Робін", "correct": false },
+        { "letter": "b", "text": "Аквамен", "correct": false },
+        { "letter": "c", "text": "Джокер", "correct": true },
+        { "letter": "d", "text": "Флеш", "correct": false }
+      ]
+    },
+    {
+      "question": "Хто намалював стелю Сікстинської капели?",
+      "answers": [
+        { "letter": "a", "text": "Леонардо", "correct": false },
+        { "letter": "b", "text": "Рафаель", "correct": false },
+        { "letter": "c", "text": "Донателло", "correct": false },
+        { "letter": "d", "text": "Мікеланджело", "correct": true }
+      ]
+    }
+  ],
+  "money": [
+    "500", "1,000", "2,000", "4,000", "8,000", "16,000", "32,000", "64,000", "125,000", "250,000", "500,000",
+    "1,000,000"
+  ]
+}

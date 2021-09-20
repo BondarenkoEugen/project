@@ -1,0 +1,161 @@
+.answerButton {
+  position: relative;
+  min-height: 0;
+  height: 100%;
+  background: transparent;
+  border: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.answerButton.correct svg path {
+  animation: glowingCorrectSvg 500ms infinite alternate;
+}
+
+@keyframes glowingCorrectSvg {
+  from {
+    stroke: var(--gray-20);
+    fill: #ffffff;
+  }
+  50% {
+    stroke: var(--green-10);
+  }
+  to {
+    stroke: var( --green-20);
+    fill: var(--green-10);
+  }
+}
+
+.answerButton.correct:before {
+  animation: glowingCorrectPseudo 500ms infinite alternate;
+}
+
+@keyframes glowingCorrectPseudo {
+  from {
+    background: var(--gray-20);
+  }
+  50% {
+    background: var(--green-10);
+  }
+  to {
+    background: var(--green-20);
+  }
+}
+
+.answerButton.wrong svg path {
+  animation: glowingWrongSvg 500ms infinite alternate;
+}
+
+@keyframes glowingWrongSvg {
+  from {
+    stroke: var(--gray-20);
+    fill: #ffffff;
+  }
+  50% {
+    stroke: var(--red-10);
+  }
+  to {
+    stroke: var(--red-20);
+    fill: var(--red-10);
+  }
+}
+
+.answerButton.wrong:before {
+  animation: glowingWrongPseudo 500ms infinite alternate;
+}
+
+@keyframes glowingWrongPseudo {
+  from {
+    background: var(--gray-20);
+  }
+  50% {
+    background: var(--red-10);
+  }
+  to {
+    background: var(--red-20);
+  }
+}
+
+.answerButton.wait:before {
+  background: var(--orange-30);
+}
+
+.answerButton.wait svg path {
+  stroke: var(--orange-30);
+  fill: var(--orange-10);
+}
+
+.answerButton::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: var(--gray-20);
+}
+
+.answerButton:hover svg path {
+  stroke: var(--orange-30);
+}
+
+.answerButton:hover:before {
+  background: var(--orange-30);
+}
+
+.answer {
+  position: absolute;
+  font-family: Inter;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: var(--gray-30);
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 40px;
+  width: 288px;
+  box-sizing: border-box;
+}
+
+.imageHolder {
+  position: relative;
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+
+  .answer {
+    width: 388px;
+  }
+}
+
+@media (min-width: 2000px) {
+
+  .answer {
+    width: 460px;
+  }
+}
+
+@media (min-width: 2500px) {
+
+  .answer {
+    width: 512px;
+  }
+}
+
+@media (min-width: 3000px) {
+
+  .answer {
+    width: 550px;
+  }
+}
+
+@media (min-width: 3000px) {
+
+  .answer {
+    width: 600px;
+  }
+}

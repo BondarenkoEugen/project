@@ -1,26 +1,39 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
 
-function App() {
+import GameScreen from './components/GameScreen/GameScreen';
+import StartMenu from './components/StartMenu/StartMenu';
+import EndMenu from './components/EndMenu/EndMenu';
+import { stage } from './types/types';
+
+export function App() {
+  const [currentStage, setCurrentStage] = useState<stage>('start');
+  const [cardIndex, setCardIndex] = useState<number>(0);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      {currentStage === 'start' && (
+        <StartMenu onClick={() => setCurrentStage('game')} />
+      )}
+
+      {currentStage === 'end' && (
+        <EndMenu
+          cardIndex={cardIndex}
+          onClick={() => {
+            setCardIndex(0);
+            setCurrentStage('game');
+          }}
+        />
+      )}
+
+      {currentStage === 'game' && (
+        <GameScreen
+          cardIndex={cardIndex}
+          onCardIndexChange={setCardIndex}
+          onEnd={() => {
+            setCurrentStage('end');
+          }}
+        />
+      )}
+    </main>
   );
 }
-
-export default App;

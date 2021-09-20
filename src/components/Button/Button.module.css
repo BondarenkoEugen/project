@@ -1,0 +1,52 @@
+.button {
+  font-family: Inter;
+  font-weight: 600;
+  background-color: var(--orange-30);
+  color: white;
+  border-radius: 12px;
+  padding: 20px 24px;
+  font-size: 14px;
+  line-height: 16px;
+  border: none;
+  cursor: pointer;
+  width: 288px;
+}
+
+.button:hover:active {
+  background-color: var(--orange-40);
+}
+
+@media (min-width: 576px) {
+  
+  .button {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .button:hover {
+    background-color: var(--orange-20);
+  }
+}
+
+@media (min-width: 2000px) {
+
+  .button{
+    width: 350px;
+    padding: 30px 30px;
+    font-size: 30px;
+    line-height: 34px;
+  }
+}
+
+@media (min-width: 3000px) {
+
+  .button{
+    width: 550px;
+    padding: 40px 50px;
+    font-size: 45px;
+    line-height: 50px;
+  }
+}

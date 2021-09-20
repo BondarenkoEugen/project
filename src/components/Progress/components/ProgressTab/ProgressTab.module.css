@@ -1,0 +1,82 @@
+.container {
+  position: relative;
+  min-height: 0;
+  height: 100%;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: var(--gray-20);
+}
+
+.container.active svg path {
+  stroke: var(--orange-30);
+}
+
+.container.active::before {
+  background: var(--orange-30);
+}
+
+.imageHolder {
+  position: relative;
+  height: 100%;
+}
+
+.textBlock {
+  position: absolute;
+  font-family: Inter;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: var(--gray-30);
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 40px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+
+  .textBlock {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 1800px) {
+
+  .textBlock{
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 2500px) {
+
+  .textBlock{
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 3000px) {
+
+  .textBlock{
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 3500px) {
+
+  .textBlock{
+    font-size: 35px;
+  }
+}
